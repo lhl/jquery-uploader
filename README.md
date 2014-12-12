@@ -124,8 +124,16 @@ Also there are also some [file upload polyfill libs](https://github.com/Moderniz
   * http://www.html5rocks.com/en/tutorials/file/xhr2/
 * FileReader info
   * http://www.sitepoint.com/html5-javascript-open-dropped-files/
-* git push local to multiple remote branches in .git/config
+* git push local to multiple remote branches in `.git/config`
   * variation of http://stackoverflow.com/a/7472481
+  * Add to `[remote "origin"]`
+
+    ```
+    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+    ```
+* How to have code in a bulleted list in Github MarkDown
+  * https://gist.github.com/clintel/1155906/
 
 ## License
 This code is MIT licensed and you're free to do with it as you please.
