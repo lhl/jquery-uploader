@@ -95,7 +95,7 @@
       if(!opts["accept"][file.type]) {
         error({
           "status": "filetypecheck",
-          "msg": "The file must be of the type: " + Object.keys(opts["accept"]).join(", ")
+          "msg": "The file must be of the type: " + $.map(opts["accept"], function(value) { return value; }).join(", ")
         });
         return;
       }
