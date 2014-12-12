@@ -10,20 +10,67 @@ JQuery plugin built for easy inline image uploading in mind:
 
 This is not the most comprehensive code available, but I'm making it available because the existing libraries I found were hard for me to customize to do exactly what I wanted, so this might be useful for someone looking for something more like a single-upload widget.
 
-
 ## Usage
 
-See the example.html for a complete (client-side) implementation 
+See the example.html for a complete (client-side) implementation.
+I've also checked in some images in samples for testing.
 
 ### Markup
+Markup can be any element. Widget items are appended so there can safely be additional items placed within if you'd like.
+
+```
+<div id="example" class="uploader"></div>
+``` 
 
 ### Calling
+Calling is straightforward:
+
+```
+$(".uploader").uploader(options);
+```
+
+You can also assign global options via `$.fn.uploader.options` if you'd like.
 
 ### Options
+Options:
+* `url`
+  * Upload destination. This must be set in the options.
+* `method`
+  * Defaults to "POST"
+* `accept` 
+  * Acceptable file types for uploads
+  * Defaults to support PNG, GIF, and JPEG
+  * `{"mime/type": "format name"}`
+    * format name is used for error messages
+* `size`
+  * Specify size/dimension restrictions
+    * `width`
+    * `height`
+    * `max-width`
+    * `max-height`
+* `instructions`
+  * If you want instructions to show up in an overlay, write the string here
+* `thumbnail`
+  * If you want to prepopulate the preview image, include the URL
 
 ### Styling
+The example.html has a sample of how you might want to style the uploader.  Here are the relevant selectors:
+* `.uploader`
+  * recommended container class
+* `.uploader-fileinput`
+  * this should usually always be hidden and not styled
+* `.uploader-instructions`
+  * optional instructions overlay
+* `.uploader-preview`
+  * where the preview/thumbnail image goes
+* `.uploader-preview .thumbnail`
+  * the actual thumbnail image
+* `.uploader-progress`
+  * progress bar element (max=100)
 
 ## Notes
+Thanks to [@remy](https://github.com/remy) for a clear example to work from.
+
 Browser Requirements:
 * [Drag and Drop](http://caniuse.com/#feat=dragndrop)
 * [File API](http://caniuse.com/#feat=fileapi)
@@ -32,7 +79,7 @@ Browser Requirements:
 * [XHR2](http://caniuse.com/#feat=xhr2)
 
 ## TODO
-* Add distribution stuff like license, versioning, etc.
+* Add distribution stuff like metadata, versioning, etc.
 * bower/requirejs compability
 * Add checks for HTML5 features
 * Build callback for more customizable error reporting
@@ -75,3 +122,4 @@ Also there are also some [file upload polyfill libs](https://github.com/Moderniz
   * http://www.sitepoint.com/html5-javascript-open-dropped-files/
 
 ## License
+This code is MIT licensed and you're free to do with it as you please.
