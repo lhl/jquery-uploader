@@ -120,6 +120,8 @@ Also there are also some [file upload polyfill libs](https://github.com/Moderniz
   * http://www.html5rocks.com/en/tutorials/file/xhr2/
 * FileReader info
   * http://www.sitepoint.com/html5-javascript-open-dropped-files/
+* git push local to multiple remote branches in .git/config
+  * variation of http://stackoverflow.com/a/7472481
 
 ## License
 This code is MIT licensed and you're free to do with it as you please.
