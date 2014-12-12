@@ -12,7 +12,7 @@ This is not the most comprehensive code available, but I'm making it available b
 
 ## Usage
 
-You can see the the [example.html](http://htmlpreview.github.io/?https://github.com/lhl/jquery-uploader/blob/master/example.html) for a complete/live (client-side) implementation.
+You can see the the [example.html](http://lhl.github.io/jquery-uploader/example.html) for a complete/live (client-side) implementation.
 I've also checked in some images in samples for testing.
 
 ### Markup
