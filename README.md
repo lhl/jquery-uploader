@@ -101,6 +101,12 @@ There are other HTML5 file uploader libs that may be a better fit for what you'r
 * [JQuery File Uploader](https://github.com/danielm/uploader)
   * Pretty decent/customizable
   * Didn't function like I wanted w/o actually customizing everything
+* [Plupload](http://www.plupload.com/)
+  * Lots and lots of features
+  * Lots of polyfills
+  * Good separation of concerns
+  * If you don't like the Widgets and use the API, you will have to write your own drag and drop, previews
+  * No built-in dimension checks
 
 Also there are also some [file upload polyfill libs](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills#file-api):
 
