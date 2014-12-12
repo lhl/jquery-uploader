@@ -11,7 +11,7 @@
 
 <!-- Styling -->
 <style>
-.uploader {
+.uploader, #example3 {
   position: relative;
   float: left;
   width: 192px;
@@ -21,7 +21,7 @@
   background: #eee;
 }
 
-.uploader progress {
+.uploader-progress {
   position: absolute;
   left: 0;
   top: 0;
@@ -29,7 +29,7 @@
   display: none;
 }
 
-.uploader-preview img {
+.uploader-preview .thumbnail {
   width: 100%;
 }
 
@@ -53,12 +53,15 @@
 <div id="example1" class="uploader"></div>
 <div id="example2" class="uploader"></div>
 
+<p>This one has no size restrictions and allows JPEG/PNG/GIF</p>
+<div id="example3"></div>
+
 <!-- Init -->
 <script>
 // Global Options
 $.fn.uploader.options.url = "http://randomfoo.net/dev/null";
 
-// Instantiate
+// Instantiate multiple via class selector
 $(".uploader").uploader({
   accept: {"image/jpeg": "JPEG" },
   size: {
@@ -66,6 +69,9 @@ $(".uploader").uploader({
     "height": 1024
   }
 });
+
+// Instantiate the sample
+$("#example3").uploader();
 </script>
 
 </body>
