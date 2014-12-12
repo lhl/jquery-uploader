@@ -129,8 +129,8 @@ Also there are also some [file upload polyfill libs](https://github.com/Moderniz
   * Add to `[remote "origin"]`
 
     ```
-    push = +refs/heads/master:refs/heads/gh-pages
-    push = +refs/heads/master:refs/heads/master
+    push = refs/heads/master:refs/heads/gh-pages
+    push = refs/heads/master:refs/heads/master
     ```
 * How to have code in a bulleted list in Github MarkDown
   * https://gist.github.com/clintel/1155906/
