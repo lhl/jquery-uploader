@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Uploader Example</title>
+</head>
+<body>
+
+<!-- Library -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="jquery.uploader.js"></script>
+
+<!-- Styling -->
+<style>
+.uploader {
+  position: relative;
+  float: left;
+  width: 192px;
+  height: 256px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  background: #eee;
+}
+
+.uploader progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+
+.uploader-preview img {
+  width: 100%;
+}
+
+.uploader-instructions {
+  position: absolute;
+  width: 80%;
+  top: 30%;
+  left: 10%;
+  color: rgba(0,0,0,0.5);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+</style>
+
+<!-- Markup -->
+<p>These uploaders support drag and drop of 768x1024 JPEG files</p>
+<div id="example1" class="uploader"></div>
+<div id="example2" class="uploader"></div>
+
+<!-- Init -->
+<script>
+// Global Options
+$.fn.uploader.options.url = "http://randomfoo.net/dev/null";
+
+// Instantiate
+$(".uploader").uploader({
+  accept: {"image/jpeg": "JPEG" },
+  size: {
+    "width": 768,
+    "height": 1024
+  }
+});
+</script>
+
+</body>
+</html>
