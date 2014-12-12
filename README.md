@@ -84,6 +84,10 @@ Browser Requirements:
 * Add checks for HTML5 features
 * Build callback for more customizable error reporting
 * Add callback for customizing
+* Additional checks
+  * min-width
+  * min-height
+  * filesize
 
 ## Other Projects
 There are other HTML5 file uploader libs that may be a better fit for what you're looking for:
