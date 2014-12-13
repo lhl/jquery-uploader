@@ -57,6 +57,13 @@ Options:
 * `thumbnail`
   * If you want to prepopulate the preview image, include the URL
 
+Callback Options:
+* `onError`
+  * You can pass in a custom function to render validation errors if you'd like. This isn't very well thought out, but I don't need callbacks a the moment and I'd like to keep this compact/simple.
+  * `error`
+    * `error["status"]` - "ok" or other
+    * `error["msg"]` - Error message assembled
+
 ### Styling
 The example.html has a sample of how you might want to style the uploader.  Here are the relevant selectors:
 * `.uploader`
@@ -86,8 +93,6 @@ Browser Requirements:
 * Add distribution stuff like metadata, versioning, etc.
 * bower/requirejs compability
 * Add checks for HTML5 features
-* Build callback for more customizable error reporting
-* Add callback for customizing
 * Additional checks
   * min-width
   * min-height
@@ -122,7 +127,7 @@ Also there are also some [file upload polyfill libs](https://github.com/Moderniz
 ## Reference
 * jQuery plugin best practices
   * https://github.com/jquery-boilerplate/jquery-patterns/blob/master/patterns/jquery.basic.plugin-boilerplate.js
-* @rem's implementation
+* [@remy](https://github.com/remy/)'s implementation
   * http://html5doctor.com/drag-and-drop-to-server/
   * http://html5demos.com/dnd-upload
   * https://github.com/remy/html5demos/blob/master/demos/dnd-upload.html

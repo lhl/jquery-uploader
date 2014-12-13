@@ -74,7 +74,7 @@
       } else {
         // Only display error when passed in
         if(err && err["msg"]) {
-          alert(err["msg"]);
+          opts["onError"].call(undefined, err);
         }
         return true;
       }
@@ -227,7 +227,12 @@
     },
     size: {},
     instructions: "Drag and Drop or Click",
-    thumbnail: null
+    thumbnail: null,
+
+    // Callbacks
+    onError: function(error) {
+      alert(error["msg"]);
+    }
   }
 
 })( jQuery, window, document );
