@@ -1,4 +1,6 @@
 ;(function ( $, window, document, undefined ) {
+
+
   /* Uploader Plugin */
   $.fn.uploader = function(options) {
     // Self (tracking uploader instance)
@@ -181,7 +183,7 @@
 
       // Make Form
       var form = new FormData();
-      form.append("file", file);
+      form.append(opts["name"], file);
 
       // Upload
       var xhr = new XMLHttpRequest();
@@ -211,6 +213,7 @@
   $.fn.uploader.options = {
     url: null,
     method: "POST",
+    name: "file",
     accept: {
       "image/png": "PNG",
       "image/gif": "GIF",

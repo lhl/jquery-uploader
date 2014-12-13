@@ -37,6 +37,8 @@ Options:
   * Upload destination. This must be set in the options.
 * `method`
   * Defaults to "POST"
+* `name`
+  * File parameter name, defaults to "file" 
 * `accept` 
   * Acceptable file types for uploads
   * Defaults to support PNG, GIF, and JPEG
