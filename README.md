@@ -37,6 +37,8 @@ Options:
   * Upload destination. This must be set in the options.
 * `method`
   * Defaults to "POST"
+* `fields`
+  * You can specify additional fields to be passed by the form submission, passed by reference so can be dynamic if you have a scoped reference
 * `name`
   * File parameter name, defaults to "file" 
 * `accept` 

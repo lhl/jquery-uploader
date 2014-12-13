@@ -185,6 +185,11 @@
       var form = new FormData();
       form.append(opts["name"], file);
 
+      // Add additional fields
+      for(k in opts["fields"]) {
+        form.append(k, opts["fields"][k]);
+      }
+
       // Upload
       var xhr = new XMLHttpRequest();
       xhr.open(opts["method"], opts["url"]);
@@ -213,6 +218,7 @@
   $.fn.uploader.options = {
     url: null,
     method: "POST",
+    fields: {},
     name: "file",
     accept: {
       "image/png": "PNG",
