@@ -12,7 +12,7 @@ You can use this as a simple drop-in for:
 
 This plugin has limited support for callbacks and doodads, but is also very compact/straight-forward source so is an easier starting point for modifications. It's <200 [CLOC](http://cloc.sourceforge.net/) and about 3.2KiB minified.
 
-In the [other projects section](#other-projects), I have links to more comprehensive prejects, but I wrote this because there was nothing that did exactly what I wanted, customization would have required most of this code anyway (and I didn't think it would take as long as it did, see [reference](#reference)). This lib is useful I think both for someone that has a similar use case (single image upload/preview widgeet) or as a reasonable starting point for your own solution.
+In the [other projects section](#other-projects), I have links to more comprehensive projects, but I wrote this because there was nothing that did exactly what I wanted, customization would have required most of this code anyway (and I didn't think it would take as long as it did, see [reference](#reference)). This lib is useful I think both for someone that has a similar use case (single image upload/preview widgeet) or as a reasonable starting point for your own solution.
 
 If you are worried about browser compatibility, you will want to check out the polyfill libs also in the [other projects section](#other-projects).
 
