@@ -23,7 +23,6 @@
     html += "<input type='file' class='uploader-fileinput' style='position: absolute; visibility: hidden; height: 0; width: 0; top: 0; left: 0'>";
     if(opts["thumbnail"]) {
       html += "<div class='uploader-preview'><img class='thumbnail' src='" + opts["thumbnail"] + "'></div>";
-      $(".uploader-preview", uploader).html("<img class='thumbnail' src='" + image.src + "'>");
     } else {
       html += "<div class='uploader-preview'></div>";
     }
