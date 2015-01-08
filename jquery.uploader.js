@@ -135,7 +135,7 @@
           }
 
           if(opts["size"]["max-width"]) {
-            if(w >= opts["size"]["max-width"]) {
+            if(w > opts["size"]["max-width"]) {
               error({
                 "status": "sizecheck",
                 "msg": "The file width must not exceed: " + opts["size"]["max-width"]
